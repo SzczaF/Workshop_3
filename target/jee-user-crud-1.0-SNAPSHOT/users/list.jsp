@@ -27,7 +27,7 @@
         </div>
         <div class="card-body">
 
-            <table class="table">
+            <table class="table table-hover">
                 <tr>
                     <th>ID</th>
                     <th>Nazwa Użytkownika</th>
