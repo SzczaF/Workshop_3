@@ -16,7 +16,7 @@
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">UsersCRUD</h1>
         <a href="<c:url value="/user/add"/>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-            <i class="fas fa-user-plus fa-sm text-white-50"></i>  Dodaj użytkownika</a>
+            <i class="fas fa-user-plus fa-sm text-white-50"></i> Dodaj użytkownika</a>
     </div>
 
     <!-- Content Row -->
@@ -41,24 +41,7 @@
                         <td>${user.userName}</td>
                         <td>${user.email}</td>
                         <td>
-                            <a href="<c:url value="/user/show?id=${user.id}"/>" class="btn-sm btn-info btn-icon-split">
-                            <span class="icon text-white-50">
-                                <i class="fas fa-info-circle"></i>
-                            </span>
-                                <span class="text">Show</span>
-                            </a>
-                            <a href="<c:url value="/user/edit?id=${user.id}"/>" class="btn-sm btn-warning btn-icon-split">
-                            <span class="icon text-white-50">
-                                <i class="fas fa-edit"></i>
-                            </span>
-                                <span class="text">Edit</span>
-                            </a>
-                            <a href="<c:url value="/user/delete?id=${user.id}"/>" class="btn-sm btn-danger btn-icon-split">
-                            <span class="icon text-white-50">
-                                <i class="fas fa-trash"></i>
-                            </span>
-                                <span class="text">Delete</span>
-                            </a>
+                            <%@include file="buttons_show_edit_delete.jsp" %>
                         </td>
                     </tr>
                 </c:forEach>
