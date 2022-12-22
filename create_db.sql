@@ -12,7 +12,7 @@ create table users
 
 describe users;
 
-insert into users (email, username, password) values ('test@test.pl', 'testowyUser', 'testowehasło');
-insert into users (email, username, password) values ('test22@test.pl', 'testowyUser22', 'testowehasło');
+# insert into users (email, username, password) values ('test@test.pl', 'testowyUser', 'testowehasło');
+# insert into users (email, username, password) values ('test22@test.pl', 'testowyUser22', 'testowehasło');
 
 select * from users;

@@ -26,21 +26,27 @@
             <h6 class="m-0 font-weight-bold text-primary">Dodaj użytkownika</h6>
         </div>
         <div class="card-body">
-            <form method="post">
+            <form method="post"
+<%--                  onsubmit="return confirm(Czy na pewno chcesz zapisać użytkownika?);--%>
+                  >
+
+                <div class="form-group">
+                    <input type="hidden" name ="inputId" class="form-control" id="inputId" value="${user.id}">
+                </div>
 
                 <div class="form-group">
                     <label for="inputUser" class="font-weight-bold">Nazwa</label>
-                    <input type="text" name ="inputUser" class="form-control" id="inputUser" placeholder="Nazwa użytkownika...">
-
+                    <input type="text" name ="inputUser" class="form-control" id="inputUser" value="${user.userName}">
                 </div>
+
                 <div class="form-group">
                     <label for="inputEmail" class="font-weight-bold">Email</label>
-                    <input type="email" name ="inputEmail"class="form-control" id="inputEmail" placeholder="user@example.com">
-
+                    <input type="email" name ="inputEmail"class="form-control" id="inputEmail" value="${user.email}">
                 </div>
+
                 <div class="form-group">
                     <label for="inputPassword" class="font-weight-bold">Password</label>
-                    <input type="password" name ="inputPassword" class="form-control" id="inputPassword" placeholder="Hasło użytkownika...">
+                    <input type="password" name ="inputPassword" class="form-control" id="inputPassword" placeholder="Podaj nowe hasło...">
                 </div>
 
                 <button type="submit" class="btn btn-primary">Zapisz</button>

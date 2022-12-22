@@ -16,7 +16,7 @@
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">UsersCRUD</h1>
         <a href="<c:url value="/user/list"/>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                class="fas fa-download fa-sm text-white-50"></i>  Lista użytkowników</a>
+                class="fas fa-list fa-sm text-white-50"></i>  Lista użytkowników</a>
     </div>
 
     <!-- Content Row -->
@@ -29,17 +29,17 @@
             <form method="post">
 
                 <div class="form-group">
-                    <label for="inputUser">Nazwa</label>
+                    <label for="inputUser" class="font-weight-bold">Nazwa</label>
                     <input type="text" name ="inputUser" class="form-control" id="inputUser" placeholder="Nazwa użytkownika...">
 
                 </div>
                 <div class="form-group">
-                    <label for="inputEmail">Email</label>
+                    <label for="inputEmail" class="font-weight-bold">Email</label>
                     <input type="email" name ="inputEmail"class="form-control" id="inputEmail" placeholder="user@example.com">
 
                 </div>
                 <div class="form-group">
-                    <label for="inputPassword">Password</label>
+                    <label for="inputPassword" class="font-weight-bold">Password</label>
                     <input type="password" name ="inputPassword" class="form-control" id="inputPassword" placeholder="Hasło użytkownika...">
                 </div>
 
